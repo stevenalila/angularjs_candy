@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Candy_app</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container" ng-controller="candiesController as candies">
+        <section class="row">
+            <div class="header">
+                <h1>Welcome to The Candy Store</h1>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-md-6 col-md-push-3 main">
+                <h2>Which is your favorite candy?</h2>
+                <div class="well">
+                    <form class="form-horizontal" ng-submit="candies.add()">
+                        <div class="form group">
+                            <label for="name">First Name:</label>
+                            <input id="name" class="form-control" placeholder="John" type="text" ng-model="candies.name" />
+                        </div>
+                        <div class="form group">
+                            <label for="candy">Candy Name:</label>
+                            <input id="candy" class="form-control" placeholder="chocolate or milk bar" type="text" ng-model="candies.candy" />
+                        </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <div class="panel panel-default">
+                <div class="col-md-6 col-md-push-3 panel-body result" ng-repeat="candy in candies.list track by $index">
+                    <p>{{ candies.name }}
+                        l<span class="glyphicon glyphicon-heart"></span>ves
+                        {{ candies.candy }}
+                    <button class="btn btn-primary glyphicon glyphicon-trash" ng-click="candies.remove()">Delete</button></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copyright">
+                <p> All rights reserved &copy 2017</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="app/app.js"></script>
+</body>
+</html>

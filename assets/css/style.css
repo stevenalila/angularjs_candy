@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Emilys+Candy');
+@import url('https://fonts.googleapis.com/css?family=Flavors');
+@import url('https://fonts.googleapis.com/css?family=Mystery+Quest');
+
+html.ng-scope {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.container {
+    height: 1000px;
+    width: auto;
+    margin: 0 auto;
+    background:url('https://unsplash.com/search/candy?photo=Pt851MU-nwk')no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+}
+
+.container .row .header h1 {
+    color: #ffffff;
+    font-family: 'Emilys Candy', cursive;
+}
+
+.container .main h2 {
+    font-family: 'Flavors', cursive;
+    color: #FFC0CB;
+}
+
+.container .main form{
+    color: #000000;
+}
+
+.container .row .main .well {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: rgba(245, 245, 245, 0.4);
+    text-align: left;
+}
+
+.container .row .result {
+    color: #87ceeb;
+    font-family: 'Mystery Quest', cursive;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+.container .copyright {
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    height: 50px;
+    font-color: #000000;
+    font-weight: bold;
+    font-size: 120%;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+.container .row {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
