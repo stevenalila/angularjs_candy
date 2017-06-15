@@ -23,7 +23,7 @@ footer {
     height: 1000px;
     width: auto;
     margin: 0 auto;
-    background:url('https://unsplash.com/search/candy?photo=Pt851MU-nwk')no-repeat center center fixed;
+    background:url('../images/choc.jpg')no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
